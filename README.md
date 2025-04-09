@@ -35,3 +35,25 @@ The pipeline preprocesses images by:
     - `IMAGE_SIZE`: (264, 264)  
     - `SLIC_PARAMS`: Parameters for SLIC segmentation (`n_segments=25`, `compactness=10`, `sigma=1.0`)  
 - `DATASET_PATH`: Path to the dataset directory.
+
+# Notes
+
+## Model Definition
+The `DFUGCN` class is not included in the provided snippet. It should:
+- Extend `pl.LightningModule`
+- Use `GCNConv` layers for graph processing
+
+## Visualization
+- Requires a graphical environment (e.g., Jupyter Notebook)
+
+## Tuning
+- Adjust `SLIC_PARAMS` (e.g., `n_segments`) for optimal segmentation based on your images
+
+## Checkpoint
+- Ensure `best_model_path` matches your saved checkpoint location
+
+## Contributing
+Feel free to open issues or submit pull requests with:
+- Improvements
+- Bug fixes
+- New features
