@@ -1,6 +1,7 @@
 # DFU Classification with Graph Convolutional Networks (GCN)
 This project implements a Graph Convolutional Network (GCN) using PyTorch Geometric and PyTorch Lightning to classify images as Diabetic Foot Ulcer (DFU) or Non-DFU. The approach involves preprocessing images into graph structures using superpixel segmentation (SLIC) and Region Adjacency Graphs (RAG), followed by training a GCN model for binary classification.
-
+Dataset Link is -https://universe.roboflow.com/ulcer-detection/foot-ulcer-detection/dataset/2
+                  https://www.kaggle.com/datasets/laithjj/diabetic-foot-ulcer-dfu
 ## Overview
 The pipeline preprocesses images by:
 - Resizing images to a fixed size (264x264).
